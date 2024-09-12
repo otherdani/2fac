@@ -9,6 +9,7 @@ This Python script implements a simple two-factor authentication (2FA) system us
    pip install pyotp qrcode
   ```bash
    git clone https://www.github.com/otherdani/2fac
+   
 2. Create a new Google Authenticator account:
  - Go to https://www.google.com/landing/2step/ and follow the instructions to set up your account.
 3. Generate a QR code:

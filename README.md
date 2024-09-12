@@ -25,30 +25,6 @@ Google provides a robust 2FA system that integrates seamlessly with various appl
      - Enable the "Google Sign-In" API.
      - Create OAuth 2.0 client credentials.
 
-   - **Code Example:**
-     ```python
-     from google.oauth2.service_account import Credentials
-     from googleapiclient.discovery import build
-
-     # Your API credentials
-     SCOPES = ['https://www.googleapis.com/auth/userinfo.email']
-     SERVICE_ACCOUNT_FILE = 'path/to/your/credentials.json'
-
-     credentials = Credentials.from_service_account_file(
-         SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-     service = build('oauth2', 'v2', credentials=credentials)
-
-     # Get user information
-     user_info = service.userinfo().get().execute()
-     print(user_info)
-
-     # You can also use the 'google-auth-oauthlib' library for web application flow
-     ```
-
 ## Implementing 2FA in Python
 
 If you want to implement a custom 2FA system within your Python application, you can use libraries like `pyotp` to generate and verify time-based one-time passwords (TOTPs).
-
-1. **Install the `pyotp` library:**
-   ```bash
-   pip install pyotp

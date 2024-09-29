@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/b1984e76-366b-4e07-b7ad-e68d19acc036)
+
 # Two-Factor Authentication using Google Authenticator
 
 This Python script implements a simple two-factor authentication (2FA) system using the `pyotp` library, allowing you to integrate with Google Authenticator.
